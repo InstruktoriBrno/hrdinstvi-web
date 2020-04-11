@@ -266,12 +266,12 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
-            <div id="trigger-h"></div>
+            <div id="trigger-marta"></div>
             <div class="hrdina mb-3">
               <img class="first" src="img/lidi/marta.jpg" alt="">
-              <img class="second-h" src="img/lidi/marta-hrdina.jpg" alt="">
+              <img id="marta" class="second" src="img/lidi/marta-hrdina.jpg" alt="">
             </div>
-            <div id="trigger-h2"></div>
+            <div id="trigger-marta2"></div>
             <h3 class="h4 mb-2">Marťa Fabianová</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -287,10 +287,12 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
+            <div id="trigger-maruska"></div>
             <div class="hrdina mb-3">
               <img class="first" src="img/lidi/maruska.jpg" alt="">
-              <img class="second-h" src="img/lidi/maruska-hrdina.jpg" alt="">
+              <img id="maruska" class="second" src="img/lidi/maruska-hrdina.jpg" alt="">
             </div>
+            <div id="trigger-maruska2"></div>
             <h3 class="h4 mb-2">Maruška Mičková</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -305,10 +307,12 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
+            <div id="trigger-zuzka"></div>
             <div class="hrdina mb-3">
               <img class="first" src="img/lidi/zuzka.jpg" alt="">
-              <img class="second-h" src="img/lidi/zuzka-hrdina.jpg" alt="">
+              <img id="zuzka" class="second" src="img/lidi/zuzka-hrdina.jpg" alt="">
             </div>
+            <div id="trigger-zuzka2"></div>
             <h3 class="h4 mb-2">Zuzka Zajícová</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -325,10 +329,12 @@
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
             <div id="trigger-k"></div>
+          <div id="trigger-adam"></div>
             <div class="hrdina mb-3">
               <img class="first" src="img/lidi/adam.jpg" alt="">
-              <img class="second-k" src="img/lidi/adam-hrdina.jpg" alt="">
+              <img id="adam" class="second" src="img/lidi/adam-hrdina.jpg" alt="">
             </div>
+            <div id="trigger-adam2"></div>
             <div id="trigger-k2"></div>
             <h3 class="h4 mb-2">Adam Křivka</h3>
             <div class="text-left">
@@ -345,10 +351,12 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
+            <div id="trigger-buc"></div>
             <div class="hrdina mb-3">
               <img class="first" src="img/lidi/buc.jpg" alt="">
-              <img class="second-k" src="img/lidi/buc-hrdina.jpg" alt="">
+              <img id="buc" class="second" src="img/lidi/buc-hrdina.jpg" alt="">
             </div>
+            <div id="trigger-buc2"></div>
             <h3 class="h4 mb-2">Ondřej "Buč" Zabloudil Pechník</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -364,10 +372,12 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
+            <div id="trigger-martin"></div>
             <div class="hrdina mb-3">
               <img class="first" src="img/lidi/martin.jpg" alt="">
-              <img class="second-k" src="img/lidi/martin-hrdina.jpg" alt="">
+              <img id="martin" class="second" src="img/lidi/martin-hrdina.jpg" alt="">
             </div>
+            <div id="trigger-martin2"></div>
             <h3 class="h4 mb-2">Martin Ukrop</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -383,32 +393,21 @@
         </div>
       </div>
       <script>
-        TweenMax.set(".second-h", {autoAlpha:0});
-        var tween = TweenMax.staggerTo(".second-h", 1, {autoAlpha:1}, 1);
-
         // init controller
         var controller = new ScrollMagic.Controller();
 
         // build scene
-        var scene = new ScrollMagic.Scene({triggerElement: "#trigger-h", duration: 400})
+        hrdinove = ['marta', 'maruska', 'zuzka', 'adam', 'buc', 'martin'];
+        for (const hrdina of hrdinove) {
+          TweenMax.set("#" + hrdina, {autoAlpha:0});
+          var tween = TweenMax.staggerTo("#" + hrdina, 1, {autoAlpha:1}, 1);
+          
+          new ScrollMagic.Scene({triggerElement: "#trigger-" + hrdina, duration: 400})
             .setTween(tween)
-            .addIndicators() // add indicators (requires plugin)
             .addTo(controller);
+        }
       </script>
-      <script>
-        TweenMax.set(".second-k", {autoAlpha:0});
-        var tween = TweenMax.staggerTo(".second-k", 1, {autoAlpha:1}, 1);
-
-        // init controller
-        var controller = new ScrollMagic.Controller();
-
-        // build scene
-        var scene = new ScrollMagic.Scene({triggerElement: "#trigger-k", duration: 400})
-            .setTween(tween)
-            .addIndicators() // add indicators (requires plugin)
-            .addTo(controller);
-      </script>
-    </div>
+</div>
   </section>
 
   <!-- Contact Section -->
