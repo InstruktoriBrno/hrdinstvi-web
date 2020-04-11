@@ -68,13 +68,10 @@
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
           <!-- <h1 class="text-uppercase text-white font-weight-bold">Hrdinství</h1> -->
-          <img src="img/hrdinstvi_logo_svetle.png" style="width: 400px">
-          <h3 class="font-weight-bold text-white-75">24. - 28. 7. 2020</h3>
+          <img src="img/hrdinstvi_logo_svetle.png" style="max-width: 700px; width:100%">
+          <h3 class="font-weight-bold text-white-75">24. - 28. července 2020</h3>
           <hr class="divider my-4">
         </div>
-        <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">O superhrdinech a lidech
-</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Chci být hrdinou!</a>
         </div>
       </div>
@@ -87,11 +84,56 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">O čem to bude?</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-75 mb-4 font-italic"> 
-            Lidé si odjakživa vyprávějí o hrdinech. Herkules, Superman, Kapitán Amerika… Hrdinové v příbězích bojují se zlem, zachraňují životy a chrání slabé, jsou odvážní a jejich morální kompasy vždycky neomylně míří k morálnímu severu. Nebo ne? A co taková Rosa Parks, Gándhí nebo Václav Havel? Může být hrdina i člověk z masa a kostí, se svými zlozvyky a chvílemi slabosti? A hlavně – potřebujeme vůbec hrdiny?
-             </p>
+          <div class="text-white font-italic row justify-content-start" id="reveal1">
+          <div id="trigger1"></div>
+          <div class="col-sm-5">
+            <p> 
+              Lidé si odjakživa vyprávějí o hrdinech.
+            </p>
+            <p>
+              <b>Herkules</b>, <b>Superman</b>, <b>Kapitán Amerika</b>…
+            </p>
+            <p>
+              Hrdinové v příbězích bojují se zlem, zachraňují životy a chrání slabé, jsou odvážní a jejich morální kompasy vždycky neomylně míří k morálnímu severu. 
+            </p>
+          </div>
+          </div>
+
+          <div class="text-white font-italic row justify-content-center" id="reveal2">
+          <div id="trigger2"></div>
+          <div class="col-sm-5">
+            <p> 
+              Nebo ne?
+            </p>
+          </div>
+          </div>
+          
+          <div class="text-white font-italic row justify-content-end" id="reveal3">
+          <div id="trigger3"></div>
+          <div class="col-sm-5">
+            <p> 
+              A co taková <b>Rosa Parks</b>, <b>Gándhí</b> nebo <b>Václav Havel</b>? Může být hrdina i člověk z masa a kostí, se svými zlozvyky a chvílemi slabosti? A hlavně – potřebujeme vůbec hrdiny?
+            </p>
+          </div>
+          </div>
+          <script>
+            
+            var controller = new ScrollMagic.Controller();
+            
+            // build scene
+            for (let i = 1; i < 4; i++) {
+          		new ScrollMagic.Scene({
+  							triggerElement: "#trigger" + i.toString(),
+  							triggerHook: 0.9, // show, when scrolled 10% into view
+  							duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+  							offset: 50 // move trigger to center of element
+  						})
+  						.setClassToggle("#reveal" + i.toString(), "visible") // add class to reveal
+  						.addTo(controller);
+              }
+          </script>
+
+          <h2 class="text-white mt-5">O čem to bude?</h2>
  
           <hr class="divider light my-4">
              <p class="text-white-75 mb-4">
@@ -317,11 +359,13 @@
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
                 <p class="text-muted mb-0">
-                    Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
+                  Jsem skvělá kuchařka.<br> 
+                  Mimo to mám taky schopnost obejmout každého, kdo to potřebuje, stejně tak jako ho vyslechnout. <br>
+                  V práci řídím životy cizích lidí, a to jak po morální, tak po ekonomické stránce.<br>
                 </p>
                 <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
                 <p class="text-muted mb-0">
-                    Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
+                  Hrdina je ten, kdo dokáže vystoupit z řady a něco udělat právě ve chvíli, kdy ostatní stojí a nekonají. Je to osobnost, která má svůj názor, umí ho vyslovit a stát si za ním. Je to člověk, který se dívá kolem sebe a je tu pro ostatní.
                 </p>
             </div>
           </div>
