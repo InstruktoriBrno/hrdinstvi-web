@@ -1,0 +1,11 @@
+.img-hrdina {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+.hrdina {
+  height: 363px;
+  background: white;
+  clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+}
