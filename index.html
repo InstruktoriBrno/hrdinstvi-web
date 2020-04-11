@@ -28,7 +28,9 @@
 
   
   <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
 </head>
 
@@ -264,12 +266,12 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
-            <div class="hrdina">
-              <img class="img-fluid text-primary mb-4 img-hrdina" src="img/lidi/marta.jpg" alt="">
+            <div id="trigger-h"></div>
+            <div class="hrdina mb-3">
+              <img class="first" src="img/lidi/marta.jpg" alt="">
+              <img class="second-h" src="img/lidi/marta-hrdina.jpg" alt="">
             </div>
-            <div class="hrdina">
-              <img class="img-fluid text-primary mb-4 img-hrdina" src="img/lidi/marta-hrdina.jpg" alt="">
-            </div>
+            <div id="trigger-h2"></div>
             <h3 class="h4 mb-2">Marťa Fabianová</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -283,35 +285,12 @@
             </div>
           </div>
         </div>
-        <script>
-	$(function () { // wait for document ready
-		// init
-		var controller = new ScrollMagic.Controller({
-			globalSceneOptions: {
-				triggerHook: 'onLeave',
-				duration: "200%" // this works just fine with duration 0 as well
-				// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
-				// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
-			}
-		});
-
-		// get all slides
-		var slides = document.querySelectorAll("div.hrdina");
-
-		// create scene for every slide
-		for (var i=0; i<slides.length; i++) {
-			new ScrollMagic.Scene({
-					triggerElement: slides[i]
-				})
-				.setPin(slides[i], {pushFollowers: false})
-				.addIndicators() // add indicators (requires plugin)
-				.addTo(controller);
-		}
-	});
-</script>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
-            <img class="img-fluid text-primary mb-4 rounded-circle" src="img/lidi/maruska.jpg" alt="">
+            <div class="hrdina mb-3">
+              <img class="first" src="img/lidi/maruska.jpg" alt="">
+              <img class="second-h" src="img/lidi/maruska-hrdina.jpg" alt="">
+            </div>
             <h3 class="h4 mb-2">Maruška Mičková</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -326,7 +305,10 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
-            <img class="img-fluid text-primary mb-4 rounded-circle" src="img/lidi/zuzka.jpg" alt="">
+            <div class="hrdina mb-3">
+              <img class="first" src="img/lidi/zuzka.jpg" alt="">
+              <img class="second-h" src="img/lidi/zuzka-hrdina.jpg" alt="">
+            </div>
             <h3 class="h4 mb-2">Zuzka Zajícová</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -342,7 +324,12 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
-            <img class="img-fluid text-primary mb-4 rounded-circle" src="img/lidi/adam.jpg" alt="">
+            <div id="trigger-k"></div>
+            <div class="hrdina mb-3">
+              <img class="first" src="img/lidi/adam.jpg" alt="">
+              <img class="second-k" src="img/lidi/adam-hrdina.jpg" alt="">
+            </div>
+            <div id="trigger-k2"></div>
             <h3 class="h4 mb-2">Adam Křivka</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -358,7 +345,10 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
-            <img class="img-fluid text-primary mb-4 rounded-circle" src="img/lidi/buc.jpg" alt="">
+            <div class="hrdina mb-3">
+              <img class="first" src="img/lidi/buc.jpg" alt="">
+              <img class="second-k" src="img/lidi/buc-hrdina.jpg" alt="">
+            </div>
             <h3 class="h4 mb-2">Ondřej "Buč" Zabloudil Pechník</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -374,7 +364,10 @@
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
-            <img class="img-fluid text-primary mb-4 rounded-circle" src="img/lidi/martin.jpg" alt="">
+            <div class="hrdina mb-3">
+              <img class="first" src="img/lidi/martin.jpg" alt="">
+              <img class="second-k" src="img/lidi/martin-hrdina.jpg" alt="">
+            </div>
             <h3 class="h4 mb-2">Martin Ukrop</h3>
             <div class="text-left">
                 <h4 class="h5">Něco o mně</h4>
@@ -389,6 +382,32 @@
           </div>
         </div>
       </div>
+      <script>
+        TweenMax.set(".second-h", {autoAlpha:0});
+        var tween = TweenMax.staggerTo(".second-h", 1, {autoAlpha:1}, 1);
+
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger-h", duration: 400})
+            .setTween(tween)
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+      </script>
+      <script>
+        TweenMax.set(".second-k", {autoAlpha:0});
+        var tween = TweenMax.staggerTo(".second-k", 1, {autoAlpha:1}, 1);
+
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger-k", duration: 400})
+            .setTween(tween)
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+      </script>
     </div>
   </section>
 

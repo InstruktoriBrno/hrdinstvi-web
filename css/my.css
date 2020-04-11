@@ -1,1 +1,17 @@
+.hrdina{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
 
+.first {
+    width: 100%;
+}
+
+.second-h, .second-k {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
