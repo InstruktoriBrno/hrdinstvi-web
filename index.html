@@ -26,6 +26,10 @@
   <link href="css/creative.min.css" rel="stylesheet">
   <link href="css/my.css" rel="stylesheet">
 
+  
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+
+
 </head>
 
 <body id="page-top">
@@ -279,6 +283,32 @@
             </div>
           </div>
         </div>
+        <script>
+	$(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller({
+			globalSceneOptions: {
+				triggerHook: 'onLeave',
+				duration: "200%" // this works just fine with duration 0 as well
+				// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+				// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+			}
+		});
+
+		// get all slides
+		var slides = document.querySelectorAll("div.hrdina");
+
+		// create scene for every slide
+		for (var i=0; i<slides.length; i++) {
+			new ScrollMagic.Scene({
+					triggerElement: slides[i]
+				})
+				.setPin(slides[i], {pushFollowers: false})
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+	});
+</script>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
             <img class="img-fluid text-primary mb-4 rounded-circle" src="img/lidi/maruska.jpg" alt="">
