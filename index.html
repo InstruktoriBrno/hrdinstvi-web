@@ -17,7 +17,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic'
+    rel='stylesheet' type='text/css'>
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -26,7 +27,7 @@
   <link href="css/creative.min.css" rel="stylesheet">
   <link href="css/my.css" rel="stylesheet">
 
-  
+
   <script src="js/ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
@@ -39,8 +40,10 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Hrdinství</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/hrdinstvi_inline_title.png" style="max-height:3em"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -68,92 +71,85 @@
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
           <!-- <h1 class="text-uppercase text-white font-weight-bold">Hrdinství</h1> -->
-          <img src="img/hrdinstvi_logo_svetle.png" style="max-width: 700px; width:100%">
+          <img src="img/hrdinstvi_title.png" style="max-width: 700px; width:100%">
           <h3 class="font-weight-bold text-white-75">24. - 28. července 2020</h3>
           <hr class="divider my-4">
         </div>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Chci být hrdinou!</a>
-        </div>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Chci být hrdinou!</a>
       </div>
+    </div>
     </div>
   </header>
 
- 
+
   <!-- About Section -->
   <section class="page-section bg-primary" id="about">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <div class="text-white font-italic row justify-content-start" id="reveal1">
-          <div id="trigger1"></div>
-          <div class="col-sm-5">
-            <p> 
-              Lidé si odjakživa vyprávějí o hrdinech.
-            </p>
-            <p>
-              <b>Herkules</b>, <b>Superman</b>, <b>Kapitán Amerika</b>…
-            </p>
-            <p>
-              Hrdinové v příbězích bojují se zlem, zachraňují životy a chrání slabé, jsou odvážní a jejich morální kompasy vždycky neomylně míří k morálnímu severu. 
-            </p>
-          </div>
+            <div id="trigger1"></div>
+            <div class="col-sm-5">
+              <p>
+                Lidé si odjakživa vyprávějí o hrdinech.
+              </p>
+              <p>
+                <b>Herkules</b>, <b>Superman</b>, <b>Kapitán Amerika</b>…
+              </p>
+              <p>
+                Hrdinové v příbězích bojují se zlem, zachraňují životy a chrání slabé, jsou odvážní a jejich morální
+                kompasy vždycky neomylně míří k morálnímu severu.
+              </p>
+            </div>
           </div>
 
           <div class="text-white font-italic row justify-content-center" id="reveal2">
-          <div id="trigger2"></div>
-          <div class="col-sm-5">
-            <p> 
-              Nebo ne?
-            </p>
+            <div id="trigger2"></div>
+            <div class="col-sm-5">
+              <p>
+                Nebo ne?
+              </p>
+            </div>
           </div>
-          </div>
-          
-          <div class="text-white font-italic row justify-content-end" id="reveal3">
-          <div id="trigger3"></div>
-          <div class="col-sm-5">
-            <p> 
-              A co taková <b>Rosa Parks</b>, <b>Gándhí</b> nebo <b>Václav Havel</b>? Může být hrdina i člověk z masa a kostí, se svými zlozvyky a chvílemi slabosti? A hlavně – potřebujeme vůbec hrdiny?
-            </p>
-          </div>
-          </div>
-          <script>
-            
-            var controller = new ScrollMagic.Controller();
-            
-            // build scene
-            for (let i = 1; i < 4; i++) {
-          		new ScrollMagic.Scene({
-  							triggerElement: "#trigger" + i.toString(),
-  							triggerHook: 0.9, // show, when scrolled 10% into view
-  							duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-  							offset: 50 // move trigger to center of element
-  						})
-  						.setClassToggle("#reveal" + i.toString(), "visible") // add class to reveal
-  						.addTo(controller);
-              }
-          </script>
 
-          <h2 class="text-white mt-5">O čem to bude?</h2>
- 
-          <hr class="divider light my-4">
-             <p class="text-white-75 mb-4">
-               <b>Hrdinství: O superhrdinech a lidech</b> je zážitková akce pořádaná pod záštitou <a class="text-white" href="https://www.instruktori.cz/">Instruktorů Brno</a>. Během prodlouženého víkendu s propracovaným programem prozkoumáš vážně i nevážně téma hrdinství. Vydáš se po boku dalších mladých inspirativních lidí po stopách slavných hrdinů a možná se cestou potkáš i s hrdiny, o kterých jsi nikdy neslyšel(-a). A kdo ví, třeba bude na konci víkendu na světě o pár hrdinů víc…
-             </p>
-          <hr class="divider light my-4">
-          <p class="text-white-75">
+          <div class="text-white font-italic row justify-content-end" id="reveal3">
+            <div id="trigger3"></div>
+            <div class="col-sm-5">
+              <p>
+                A co taková <b>Rosa Parks</b>, <b>Gándhí</b> nebo <b>Václav Havel</b>? Může být hrdina i člověk z masa a
+                kostí, se svými zlozvyky a chvílemi slabosti? A hlavně – potřebujeme vůbec hrdiny?
+              </p>
+            </div>
+          </div>
+
+          <div id="trigger4"></div>
+          <div class="" id="reveal4">
+            <h2 class="text-white mt-5">O čem to bude?</h2>
+
+            <hr class="divider light my-4">
+            <p class="text-white-75 mb-4">
+              <b>Hrdinství: O superhrdinech a lidech</b> je zážitková akce pořádaná pod záštitou <a class="text-white"
+                href="https://www.instruktori.cz/">Instruktorů Brno</a>. Během prodlouženého víkendu s propracovaným
+              programem prozkoumáš vážně i nevážně téma hrdinství. Vydáš se po boku dalších mladých inspirativních lidí
+              po stopách slavných hrdinů a možná se cestou potkáš i s hrdiny, o kterých jsi nikdy neslyšel(-a). A kdo
+              ví, třeba bude na konci víkendu na světě o pár hrdinů víc…
+            </p>
+            <hr class="divider light my-4">
+            <p class="text-white-75">
               Kdo jsou to hrdinové a odkud se berou?<br>
               Co je to hrdinství?<br>
               Může být hrdina každý?<br>
               Jaké k tomu potřebuje schopnosti?<br>
               Dají se ty schopnosti získat, nebo člověka opravdu musí kousnout radioaktivní pavouk<br>
-          </p>
-          <hr class="divider light my-4">
-          <p class="text-white-75 mb-4">
-            Odpovědi budeme společně hledat 24.–28. července (pátek až úterý). Přidej se k nám a zažij pět nezapomenutelných dní.
-          </p>
+            </p>
+            <hr class="divider light my-4">
+            <p class="text-white-75 mb-4">
+              Odpovědi budeme společně hledat 24.–28. července (pátek až úterý). Přidej se k nám a zažij pět
+              nezapomenutelných dní.
+            </p>
 
-</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#informace">Přihlaš se!</a>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#informace">Přihlaš se!</a>
+          </div>
         </div>
       </div>
     </div>
@@ -164,79 +160,79 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/pohyb.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/pohyb.jpg" alt="">
+          <a class="portfolio-box portfolio-box-custom" href="img/portfolio/fullsize/pohyb.jpg">
+            <img class="img-fluid portfolio-custom" src="img/portfolio/thumbnails/pohyb_c.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
+                Pohyb
               </div>
               <div class="project-name">
-                Project Name
+                Možná se trošku zapotíš...
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/uceni_se.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/uceni_se.jpg" alt="">
+          <a class="portfolio-box portfolio-box-custom" href="img/portfolio/fullsize/mozek.jpg">
+            <img class="img-fluid portfolio-custom" src="img/portfolio/thumbnails/mozek_c.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
+                Mozek
               </div>
               <div class="project-name">
-                Project Name
+                Budeš muset zapojit mozek...
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/uspech.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/uspech.jpg" alt="">
+          <a class="portfolio-box portfolio-box-custom" href="img/portfolio/fullsize/uspech.jpg">
+            <img class="img-fluid portfolio-custom" src="img/portfolio/thumbnails/uspech_c.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
+                Úspěch
               </div>
               <div class="project-name">
-                Project Name
+                Společně s ostatními se překonáš...
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/zabava.gif">
-            <img class="img-fluid" src="img/portfolio/thumbnails/zabava.gif" alt="">
+          <a class="portfolio-box portfolio-box-custom" href="img/portfolio/fullsize/zabava.gif">
+            <img class="img-fluid portfolio-custom" src="img/portfolio/thumbnails/zabava.gif" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
+                Zábava
               </div>
               <div class="project-name">
-                Project Name
+                Užiješ si kopec náhodné srandy...
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/zamysleni.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/zamysleni.jpg" alt="">
+          <a class="portfolio-box portfolio-box-custom" href="img/portfolio/fullsize/zamysleni.jpg">
+            <img class="img-fluid portfolio-custom" src="img/portfolio/thumbnails/zamysleni_c.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
+                Zamyšlení
               </div>
               <div class="project-name">
-                Project Name
+                Budeš mít čas zamyslet se nad sebou...
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/odpocinek.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/odpocinek.jpg" alt="">
+          <a class="portfolio-box portfolio-box-custom" href="img/portfolio/fullsize/odpocinek.jpg">
+            <img class="img-fluid portfolio-custom" src="img/portfolio/thumbnails/odpocinek_c.jpg" alt="">
             <div class="portfolio-box-caption p-3">
               <div class="project-category text-white-50">
-                Category
+                Odpočinek
               </div>
               <div class="project-name">
-                Project Name
+                Samozřejmě budeš mít i prostor si odpočinout...
               </div>
             </div>
           </a>
@@ -248,55 +244,81 @@
   <!-- Přihláška Section -->
   <section class="page-section bg-dark text-white" id="informace">
     <div class="container text-center">
+      <div class="row justify-content-center align-items-center mb-5">
+      <div class="col-lg-8">
       <h2 class="mb-4">Přihláška</h2>
       <hr class="divider my-4">
       <h2 class="mb-4">Datum a místo</h2>
-          <ul class="text-left mr-5 ml-5">
-            <li> Prodloužený víkend 7. – 10. května 2020 v Kloboukách u Brna.
-            <li> Start akce bude ve čtvrtek kolem čtvrté/páté odpoledne, konec v neděli odpoledne.
-          </ul>
-      <h2 class="mb-4">Cena</h2>
-          <ul class="text-left mr-5 ml-5">
-                <li> Cena víkendovky činí 1500 Kč.
-                <li> V ceně: doprava, strava 5x denně, ubytování (ve vlastním spacáku a karimatce).
-                <li> Tým, který pro Tebe víkendovku připravuje, pracuje zdarma, akce je nezisková.
-                <li> Pokud chceš, můžeš zaplatit o něco málo víc – přebytečná částka bude sloužit jako dar spolku Instruktoři Brno a bude použita na další rozvoj jeho činnosti.
-          </ul>
+      <ul class="text-left mr-5 ml-5">
+        <li> Prodloužený víkend 24. – 28. července 2020 (pátek až úterý) v Kloboukách u Brna.
+        <li> Start akce bude v pátek kolem čtvrté/páté odpoledne, konec v uterý odpoledne.
+      </ul>
 
+      <hr class="divider my-4">
+      <h2 class="mb-4">Cena</h2>
+      <ul class="text-left mr-5 ml-5">
+        <li> Cena víkendovky činí 1500 Kč.
+        <li> V ceně: doprava, strava 5x denně, ubytování (ve vlastním spacáku a karimatce).
+        <li> Tým, který pro Tebe víkendovku připravuje, pracuje zdarma, akce je nezisková.
+        <li> Pokud chceš, můžeš zaplatit o něco málo víc – přebytečná částka bude sloužit jako dar spolku <a class="text-white-75" href="https://www.instruktori.cz/">Instruktoři Brno</a>  a bude použita na další rozvoj jeho činnosti.
+      </ul>
+
+      <hr class="divider my-4">
       <h2 class="mb-4">Přihlašování</h2>
-        <ul class="text-left mr-5 ml-5">
-              <li> Kapacita akce je 25 účastníků.
-              <li> Organizátoři si vyhrazují právo vybírat účastníky (usilujeme o pohlavně vyvážený kolektiv, aby mohli muži čerpat ze zkušeností a myšlenek žen, a naopak).
-        </ul>
-      <br>
-      <div class="row align-items-center">
-        <div class="col-5">
+      <ul class="text-left mr-5 ml-5">
+        <li> Kapacita akce je 25 účastníků.
+        <li> Organizátoři si vyhrazují právo vybírat účastníky (usilujeme o pohlavně vyvážený kolektiv, aby mohli muži
+          čerpat ze zkušeností a myšlenek žen, a naopak).
+      </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="dino-container mt-5">
           <a class="btn btn-light btn-xl" href="https://forms.gle/4VKJ6xkMLvngiB6g6">Přihlašovací formulář</a>
+          <div id="trigger5"></div>
+          <img src="img/hrdinosaurus_arrow.png" class="dino-image" id="reveal5">
         </div>
-        <div class="rounded-pill bg-light col-6 offset-1 text-primary">
-          <div class="row align-items-center">
-            <div class="col-3">
-                <a href="https://www.facebook.com/events/195692075020117/" class="fa fa-facebook fa-3x text-muted"></a>
+        
+        <div class="rounded-lg bg-light text-primary mt-5">
+          <div class="row justify-content-center">
+            <div class="col-2 m-1 mt-2">
+              <a href="https://www.facebook.com/events/195692075020117/" class="fa fa-facebook fa-3x text-muted"></a>
             </div>
-            <div class="col-md-9 p-4">
+            <div class="col-10">
               <p>
-                Nezapomeň se přihlásit do <a href="https://www.facebook.com/events/195692075020117/" class="text-info"> události na Facebooku</a> – důležité informace Ti pošleme e-mailem, ale na Facebooku se dozvíš, kdo s Tebou pojede, a můžeš na akci pozvat své kamarády.
+                Nezapomeň se přihlásit do <a href="https://www.facebook.com/events/195692075020117/" class="text-info">
+                  události na Facebooku</a> – důležité informace Ti pošleme e-mailem, ale na Facebooku se dozvíš, kdo s
+                Tebou pojede, a můžeš na akci pozvat své kamarády.
               </p>
             </div>
           </div>
         </div>
+        <div class="rounded-pill bg-light mt-5 p-3" style="color: #212529;">
+          Kdyby něco, tak piš na <a href="mailto:hrdinstvi@insturktori.cz">hrdinstvi@insturktori.cz</a>.
+        </div>
       </div>
     </div>
+    <div class="rounded-lg text-danger bg-light p-5 mt-5 text-left">
+      <h2 class="mb-4 text-center;">KORONAVIRUS </h2>
 
-    <div class="rounded-lg col-8 text-danger bg-light p-5 mt-5">
-      <h2 class="mb-4">KORONAVIRUS </h2>
-
-      <p>Situaci ohledně šíření COVID-19 nebereme na lehkou váhu. Názory odborníků na dobu potřebnou ke zkrocení nemoci se liší. Situace se mění ze dne na den a v současné chvíli nevíme, zda bude možné akci Hrdinství: O superhrdinech a lidech uvést v plánovaném termínu. Jsme však optimisté a věříme, že společně nakonec nemoc porazíme, a proto v přípravách akce pokračujeme.</p>
-      <p>Akce Hrdinství: O superhrdinech a lidech se odehraje, pokud bude v době konání v souladu nejen s aktuálně platnými nařízeními, ale i doporučeními vlády a odborníků. Při přípravě programu a zázemí místa konání akce už teď řešíme, jak dosáhnout co nejvyššího hygienického a bezpečnostního standardu. Zároveň budeme při zahájení akce požadovat potvrzení o bezinfekčnosti.</p>
-      <p>Pokud bychom měli v jakémkoliv bodě přípravy akce sebemenší pochybnost, že může dojít k ohrožení našeho či vašeho zdraví, konání akce bude odloženo a účastníkům bude vrácena celá částka.</p>
-      <p>Pokud by byla akce zrušena, dáme Vám to vědět nejpozději 14 dní předem (tj. do pátku 10. července). V případě jakýchkoliv jiných změn Vás budeme průběžně informovat.</p>
-      <p>Stejnou zodpovědnost očekáváme od vás jako účastníků – místo běžných stornopoplatků (např. vrácení 70 % částky při odhlášení 30 dní předem, 50 % při odhlášení 10 dní předem) nám můžete kdykoli oznámit, že se akce ze zdravotních či jiných důvodů nezúčastníte, a bude vám vráceno 100 % vaší platby. Doba si žádá nejen, abychom si pomáhali, ale i věřili. A my věříme, že této možnosti využijete pouze z pádných důvodů.</p>
+      <p>Situaci ohledně šíření COVID-19 nebereme na lehkou váhu. Názory odborníků na dobu potřebnou ke zkrocení nemoci
+        se liší. Situace se mění ze dne na den a v současné chvíli nevíme, zda bude možné akci Hrdinství: O
+        superhrdinech a lidech uvést v plánovaném termínu. Jsme však optimisté a věříme, že společně nakonec nemoc
+        porazíme, a proto v přípravách akce pokračujeme.</p>
+      <p>Akce Hrdinství: O superhrdinech a lidech se odehraje, pokud bude v době konání v souladu nejen s aktuálně
+        platnými nařízeními, ale i doporučeními vlády a odborníků. Při přípravě programu a zázemí místa konání akce už
+        teď řešíme, jak dosáhnout co nejvyššího hygienického a bezpečnostního standardu. Zároveň budeme při zahájení
+        akce požadovat potvrzení o bezinfekčnosti.</p>
+      <p>Pokud bychom měli v jakémkoliv bodě přípravy akce sebemenší pochybnost, že může dojít k ohrožení našeho či
+        vašeho zdraví, konání akce bude odloženo a účastníkům bude vrácena celá částka.</p>
+      <p>Pokud by byla akce zrušena, dáme Vám to vědět nejpozději 14 dní předem (tj. do pátku 10. července). V případě
+        jakýchkoliv jiných změn Vás budeme průběžně informovat.</p>
+      <p>Stejnou zodpovědnost očekáváme od vás jako účastníků – místo běžných stornopoplatků (např. vrácení 70 % částky
+        při odhlášení 30 dní předem, 50 % při odhlášení 10 dní předem) nám můžete kdykoli oznámit, že se akce ze
+        zdravotních či jiných důvodů nezúčastníte, a bude vám vráceno 100 % vaší platby. Doba si žádá nejen, abychom si
+        pomáhali, ale i věřili. A my věříme, že této možnosti využijete pouze z pádných důvodů.</p>
     </div>
+  </div>
+
 
   </section>
 
@@ -316,14 +338,21 @@
             <div id="trigger-marta2"></div>
             <h3 class="h4 mb-2">Marťa Fabianová</h3>
             <div class="text-left">
-                <h4 class="h5">Něco o mně</h4>
-                <p class="text-muted mb-0">
-                    Ještě nedávno jsem prohlašovala, že mě na hory nikdo nedostane. Pak se ale něco stalo a já chodila měsíc po Španělsku, kde jsem zjistila, že toho ke štěstí příliš nepotřebuju. Na cestách nacházím dobrodrůžo, přírodu, svobodu, klid a radost z návratu. Nepohrdnu posezením v čajce s fajn lidmi a deskovkami ani dobrou kávou a dortíkem. Když je někde jídlo a možnost se v něm realizovat, najdete mě nedaleko. Baví mě hledat ve věcech smysl. V budoucnu bych se ráda vydala na další pouť, měla přednášku (a neutekla z ní), skočila tandem a nechala se zbouchnout sympatickým hrdinou :o).
-                </p>
-                <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
-                <p class="text-muted mb-0">
-                    Ten, kdo překoná strach, lenost, nechuť a všechny další věci, co jsou nám lidem přirozený a koná ve chvíli, kdy nemusí a neví, jakej to bude mít výsledek. Velká hrdinka je pro mě moje máma (mami, doufám, že to čteš!).
-                </p>
+              <h4 class="h5">Něco o mně</h4>
+              <p class="text-muted mb-0">
+                Ještě nedávno jsem prohlašovala, že mě na hory nikdo nedostane. Pak se ale něco stalo a já chodila měsíc
+                po Španělsku, kde jsem zjistila, že toho ke štěstí příliš nepotřebuju. Na cestách nacházím dobrodrůžo,
+                přírodu, svobodu, klid a radost z návratu. Nepohrdnu posezením v čajce s fajn lidmi a deskovkami ani
+                dobrou kávou a dortíkem. Když je někde jídlo a možnost se v něm realizovat, najdete mě nedaleko. Baví mě
+                hledat ve věcech smysl. V budoucnu bych se ráda vydala na další pouť, měla přednášku (a neutekla z ní),
+                skočila tandem a nechala se zbouchnout sympatickým hrdinou :o).
+              </p>
+              <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
+              <p class="text-muted mb-0">
+                Ten, kdo překoná strach, lenost, nechuť a všechny další věci, co jsou nám lidem přirozený a koná ve
+                chvíli, kdy nemusí a neví, jakej to bude mít výsledek. Velká hrdinka je pro mě moje máma (mami, doufám,
+                že to čteš!).
+              </p>
             </div>
           </div>
         </div>
@@ -337,13 +366,18 @@
             <div id="trigger-maruska2"></div>
             <h3 class="h4 mb-2">Maruška Mičková</h3>
             <div class="text-left">
-                <h4 class="h5">Něco o mně</h4>
-                <p class="text-muted mb-0">
-                    Jsem studentka pajdáku a ano, opravdu chci učit. Práce s dětmi, ale i s lidmi obecně mě baví a naplňuje. V létě trávím dost času na táborech, přes rok jsem zas převážně ve škole, s kamarády nebo rodinou. Mám ráda umění, divadlo a taky ráda naslouchám příběhům. Jo, a abych nezapomněla – nejlepším přítelem člověka je kočka. :)                </p>
-                <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
-                <p class="text-muted mb-0">
-                    Kdo je pro mě hrdina? – Konkrétní příklad říct nedokážu, nikdy jsem neměla v hlavě obrázek ideálního hrdiny. Nicméně hrdinské skutky jsou pro mě i úplné drobnosti, jelikož i malé věci mohou mít velký dopad – zvlášť ty, které mají hlubší význam.
-                </p>
+              <h4 class="h5">Něco o mně</h4>
+              <p class="text-muted mb-0">
+                Jsem studentka pajdáku a ano, opravdu chci učit. Práce s dětmi, ale i s lidmi obecně mě baví a naplňuje.
+                V létě trávím dost času na táborech, přes rok jsem zas převážně ve škole, s kamarády nebo rodinou. Mám
+                ráda umění, divadlo a taky ráda naslouchám příběhům. Jo, a abych nezapomněla – nejlepším přítelem
+                člověka je kočka. :) </p>
+              <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
+              <p class="text-muted mb-0">
+                Kdo je pro mě hrdina? – Konkrétní příklad říct nedokážu, nikdy jsem neměla v hlavě obrázek ideálního
+                hrdiny. Nicméně hrdinské skutky jsou pro mě i úplné drobnosti, jelikož i malé věci mohou mít velký dopad
+                – zvlášť ty, které mají hlubší význam.
+              </p>
             </div>
           </div>
         </div>
@@ -357,23 +391,25 @@
             <div id="trigger-zuzka2"></div>
             <h3 class="h4 mb-2">Zuzka Zajícová</h3>
             <div class="text-left">
-                <h4 class="h5">Něco o mně</h4>
-                <p class="text-muted mb-0">
-                  Jsem skvělá kuchařka.<br> 
-                  Mimo to mám taky schopnost obejmout každého, kdo to potřebuje, stejně tak jako ho vyslechnout. <br>
-                  V práci řídím životy cizích lidí, a to jak po morální, tak po ekonomické stránce.<br>
-                </p>
-                <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
-                <p class="text-muted mb-0">
-                  Hrdina je ten, kdo dokáže vystoupit z řady a něco udělat právě ve chvíli, kdy ostatní stojí a nekonají. Je to osobnost, která má svůj názor, umí ho vyslovit a stát si za ním. Je to člověk, který se dívá kolem sebe a je tu pro ostatní.
-                </p>
+              <h4 class="h5">Něco o mně</h4>
+              <p class="text-muted mb-0">
+                Jsem skvělá kuchařka.<br>
+                Mimo to mám taky schopnost obejmout každého, kdo to potřebuje, stejně tak jako ho vyslechnout. <br>
+                V práci řídím životy cizích lidí, a to jak po morální, tak po ekonomické stránce.<br>
+              </p>
+              <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
+              <p class="text-muted mb-0">
+                Hrdina je ten, kdo dokáže vystoupit z řady a něco udělat právě ve chvíli, kdy ostatní stojí a nekonají.
+                Je to osobnost, která má svůj názor, umí ho vyslovit a stát si za ním. Je to člověk, který se dívá kolem
+                sebe a je tu pro ostatní.
+              </p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="m-4">
             <div id="trigger-k"></div>
-          <div id="trigger-adam"></div>
+            <div id="trigger-adam"></div>
             <div class="hrdina mb-3">
               <img class="first" src="img/lidi/adam.jpg" alt="">
               <img id="adam" class="second" src="img/lidi/adam-hrdina.jpg" alt="">
@@ -382,14 +418,20 @@
             <div id="trigger-k2"></div>
             <h3 class="h4 mb-2">Adam Křivka</h3>
             <div class="text-left">
-                <h4 class="h5">Něco o mně</h4>
-                <p class="text-muted mb-0">
-                    Ciao, jsem ňákej Adam a chtěl bych být astronautem. Nebo aspoň stavět rakety. Fascinuje mě vesmír, k tomu matika, fyzika, ... a všechny vědy. Rád přemýšlím do hloubky, někdy se do toho úplně zamotám a nejsem pak schopný vidět jasně. Chtěl bych se to naučit. Netriviální množství času trávím nad otázkou: "Co to znamená být racionální?"
-                </p>
-                <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
-                <p class="text-muted mb-0">
-                    Pro mě je důležité, aby v daném hrdinském činu vystupovala nějaká druhá bytost. Jinak řečeno, hrdinou je někdo, kdo udělá něco navíc NE pro sebe. Přijde mi užitečnější, když slova, kterými označujeme věci, mají konkrétní významy, a proto např. riskatním činům k vlastní záchraně říkám prostě sebepřekonání nebo odvaha.
-                </p>
+              <h4 class="h5">Něco o mně</h4>
+              <p class="text-muted mb-0">
+                Ciao, jsem ňákej Adam a chtěl bych být astronautem. Nebo aspoň stavět rakety. Fascinuje mě vesmír, k
+                tomu matika, fyzika, ... a všechny vědy. Rád přemýšlím do hloubky, někdy se do toho úplně zamotám a
+                nejsem pak schopný vidět jasně. Chtěl bych se to naučit. Netriviální množství času trávím nad otázkou:
+                "Co to znamená být racionální?"
+              </p>
+              <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
+              <p class="text-muted mb-0">
+                Pro mě je důležité, aby v daném hrdinském činu vystupovala nějaká druhá bytost. Jinak řečeno, hrdinou je
+                někdo, kdo udělá něco navíc NE pro sebe. Přijde mi užitečnější, když slova, kterými označujeme věci,
+                mají konkrétní významy, a proto např. riskatním činům k vlastní záchraně říkám prostě sebepřekonání nebo
+                odvaha.
+              </p>
             </div>
           </div>
         </div>
@@ -403,14 +445,19 @@
             <div id="trigger-buc2"></div>
             <h3 class="h4 mb-2">Ondřej "Buč" Zabloudil Pechník</h3>
             <div class="text-left">
-                <h4 class="h5">Něco o mně</h4>
-                <p class="text-muted mb-0">
-                    V osobním životě jsem certifikovaný dodavatel trapných vtipů, v práci učitel a učitel učitelů. Věřím, že pomáhat lidem se vzděláváním je ta nejdůležitější práce na světě, a jednoho dne bych chtěl učit tak, aby moje hodiny byly stejně zajímavé jako pohled na první sníh padající za okny třídy. U jídla si můžeme povídat třeba o indie muzice, deskovkách nebo nutnosti revize Rámcového vzdělávacího programu pro SŠ. Má láska ke knihám by se dala vyjádřit v knihomolech.
-                </p>
-                <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
-                <p class="text-muted mb-0">
-                    Moje učitelka matematiky ze střední, profesorka Jevická. Čtyřikrát týdně po dobu osmi let statečně bojovala s mou neschopností provádět základní matematické operace – sice marně, ale nikdy to nevzdala!
-                </p>
+              <h4 class="h5">Něco o mně</h4>
+              <p class="text-muted mb-0">
+                V osobním životě jsem certifikovaný dodavatel trapných vtipů, v práci učitel a učitel učitelů. Věřím, že
+                pomáhat lidem se vzděláváním je ta nejdůležitější práce na světě, a jednoho dne bych chtěl učit tak, aby
+                moje hodiny byly stejně zajímavé jako pohled na první sníh padající za okny třídy. U jídla si můžeme
+                povídat třeba o indie muzice, deskovkách nebo nutnosti revize Rámcového vzdělávacího programu pro SŠ. Má
+                láska ke knihám by se dala vyjádřit v knihomolech.
+              </p>
+              <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
+              <p class="text-muted mb-0">
+                Moje učitelka matematiky ze střední, profesorka Jevická. Čtyřikrát týdně po dobu osmi let statečně
+                bojovala s mou neschopností provádět základní matematické operace – sice marně, ale nikdy to nevzdala!
+              </p>
             </div>
           </div>
         </div>
@@ -424,14 +471,20 @@
             <div id="trigger-martin2"></div>
             <h3 class="h4 mb-2">Martin Ukrop</h3>
             <div class="text-left">
-                <h4 class="h5">Něco o mně</h4>
-                <p class="text-muted mb-0">
-                    Aktuálně mám vícero rolí. Jsem výzkumník, učitel, dobrovolník, kuchař, kutil, přítel (ne nutně v tomto pořadí). Profesně se věnuji použitelné počítačové bezpečnosti a vzdělávám začínající pedagogy. Jako nadšený instruktor se věnuji i neformálnímu zážitkovému vzdělávání. Do toho dobré jídlo, deskohraní ale i zájem o životní prostředí. Ono to všechno spolu souvisí víc, než by jeden čekal.
-                </p>
-                <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
-                <p class="text-muted mb-0">
-                    Ten, kdo neváhá pomoct druhým, ale nezapomíná ani na své vlastní potřeby. Ten, kdo si dokáže říct o pomoc, když ji potřebuje. Ten, kdo svůj názor dokáže veřejně prezentovat, ale respektuje při tom i názory ostatních. Že to není žádné superhrdinství? Vítejte v mém světě, kde hrdinové chodí dennodenně mezi námi.
-                </p>
+              <h4 class="h5">Něco o mně</h4>
+              <p class="text-muted mb-0">
+                Aktuálně mám vícero rolí. Jsem výzkumník, učitel, dobrovolník, kuchař, kutil, přítel (ne nutně v tomto
+                pořadí). Profesně se věnuji použitelné počítačové bezpečnosti a vzdělávám začínající pedagogy. Jako
+                nadšený instruktor se věnuji i neformálnímu zážitkovému vzdělávání. Do toho dobré jídlo, deskohraní ale
+                i zájem o životní prostředí. Ono to všechno spolu souvisí víc, než by jeden čekal.
+              </p>
+              <h4 class="h5 mt-2">Kdo je pro mě hrdina?</h4>
+              <p class="text-muted mb-0">
+                Ten, kdo neváhá pomoct druhým, ale nezapomíná ani na své vlastní potřeby. Ten, kdo si dokáže říct o
+                pomoc, když ji potřebuje. Ten, kdo svůj názor dokáže veřejně prezentovat, ale respektuje při tom i
+                názory ostatních. Že to není žádné superhrdinství? Vítejte v mém světě, kde hrdinové chodí dennodenně
+                mezi námi.
+              </p>
             </div>
           </div>
         </div>
@@ -443,38 +496,14 @@
         // build scene
         hrdinove = ['marta', 'maruska', 'zuzka', 'adam', 'buc', 'martin'];
         for (const hrdina of hrdinove) {
-          TweenMax.set("#" + hrdina, {autoAlpha:0});
-          var tween = TweenMax.staggerTo("#" + hrdina, 1, {autoAlpha:1}, 1);
-          
-          new ScrollMagic.Scene({triggerElement: "#trigger-" + hrdina, duration: 400})
+          TweenMax.set("#" + hrdina, { autoAlpha: 0 });
+          var tween = TweenMax.staggerTo("#" + hrdina, 1, { autoAlpha: 1 }, 1);
+
+          new ScrollMagic.Scene({ triggerElement: "#trigger-" + hrdina, duration: 400 })
             .setTween(tween)
             .addTo(controller);
         }
       </script>
-</div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Kontakt</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5"></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <a href"facebook.com" class="fa fa-facebook fa-3x mb-3 text-muted"></a>
-          <div><a href="https://www.facebook.com/events/195692075020117/">FB událost</a></div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:hrdinstvi@insturktori.cz">hrdinstvi@insturktori.cz</a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -482,14 +511,15 @@
   <footer class="bg-light py-5">
     <div class="container">
       <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-              <img src="img/sova.png">
-          </div>
-          <div class="col-lg-4 mr-auto text-center align-middle">
-                Hrdinství je akce pořádaná pod hlavičkou <a href="instruktori.cz">Instruktorů Brno</a>.
-          </div>
+        <div class="col-lg-4 ml-auto text-center">
+          <img src="img/sova.png">
+        </div>
+        <div class="col-lg-4 mr-auto text-center align-middle">
+          Hrdinství je akce pořádaná pod hlavičkou <a href="instruktori.cz">Instruktorů Brno</a>.
+        </div>
       </div>
-      <div class="small text-center text-muted copyright">Copyright &copy; 2019 - Start Bootstrap, šablona <a href="https://startbootstrap.com/themes/creative/">Creative</a>
+      <div class="small text-center text-muted copyright">Copyright &copy; 2019 - Start Bootstrap, šablona <a
+          href="https://startbootstrap.com/themes/creative/">Creative</a>
       </div>
     </div>
   </footer>
@@ -504,6 +534,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
+
+  <script src="js/my.js"></script>
 
 </body>
 
