@@ -1,7 +1,7 @@
 var controller = new ScrollMagic.Controller();
 
 // build scene
-for (let i = 1; i < 5; i++) {
+for (var i = 1; i < 5; i++) {
   new ScrollMagic.Scene({
     triggerElement: "#trigger" + i.toString(),
     triggerHook: 0.9, // show, when scrolled 10% into view
