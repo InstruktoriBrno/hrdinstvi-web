@@ -49,7 +49,6 @@ function clean() {
 
 // Clean vendor
 function deploy() {
-  del(["./node_modules/"]);
   del(["./scss/"]);
   del(["./README"]);
   del(["./LICENSE"]);
@@ -59,8 +58,7 @@ function deploy() {
   del(["./.gitignore/"])
   del(["./package-lock.json"]);
   del(["./package.json"]);
-  del(["./package-lock.json"]);
-  return 0;
+  return del(["./node_modules/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
