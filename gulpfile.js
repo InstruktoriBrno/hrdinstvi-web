@@ -54,10 +54,11 @@ function deploy() {
   del(["./LICENSE"]);
   del(["./Gulpfile.js"]);
   del(["./.travis.yml"]);
-  del(["./package.json"]);
+  del(["./.gitattributes"]);
+  del(["./.gitignore/"])
   del(["./package-lock.json"]);
-  return del(["./.gitignore/"]);
-
+  del(["./package.json"]);
+  return del(["./node_modules/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
