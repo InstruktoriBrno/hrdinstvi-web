@@ -49,15 +49,18 @@ function clean() {
 
 // Clean vendor
 function deploy() {
+  del(["./node_modules/"]);
   del(["./scss/"]);
   del(["./README"]);
   del(["./LICENSE"]);
   del(["./Gulpfile.js"]);
   del(["./.travis.yml"]);
+  del(["./.gitattributes"]);
+  del(["./.gitignore/"])
+  del(["./package-lock.json"]);
   del(["./package.json"]);
   del(["./package-lock.json"]);
-  return del(["./.gitignore/"]);
-
+  return 0;
 }
 
 // Bring third party dependencies from node_modules into vendor directory
