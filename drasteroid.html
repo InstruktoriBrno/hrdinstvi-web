@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hrdinství</title>
+
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS - Includes Bootstrap -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
+
+</head>
+
+<script>
+    function validate() {
+        var sifry = { "KONOPI": "V průchodu do hlavní chrámové lodě je neviditelný alarm, který vzburcuje stráže.", "KONOPÍ": "V průchodu do hlavní chrámové lodě je neviditelný alarm, který vzburcuje stráže.", "konopi": "V průchodu do hlavní chrámové lodě je neviditelný alarm, který vzburcuje stráže.", "konopí": "V průchodu do hlavní chrámové lodě je neviditelný alarm, který vzburcuje stráže.", "Konopí": "V průchodu do hlavní chrámové lodě je neviditelný alarm, který vzburcuje stráže.", "HUKVALDY": "Jeden strážný se bojí koček a mňoukání.", "hukvaldy": "Jeden strážný se bojí koček a mňoukání.", "Hukvaldy": "Jeden strážný se bojí koček a mňoukání.", "273": "Když kostel obejdete zprava, najdete odemčený boční vchod.", "ruiny": "Na ochozu kostela je odstřelovač, oslňte ho světlem z baterky telefonu nebo čelovkou.", "RUINY": "Na ochozu kostela je odstřelovač, oslňte ho světlem z baterky telefonu nebo čelovkou.", "Ruiny": "Na ochozu kostela je odstřelovač, oslňte ho světlem z baterky telefonu nebo čelovkou.", "sup": "Jeden strážný má fóbii z ponožek.", "SUP": "Jeden strážný má fóbii z ponožek.", "Sup": "Jeden strážný má fóbii z ponožek.", "iglu": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "IGLU": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "iglú": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "IGLÚ": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "IGLŮ": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "iglů": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "Iglu": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "Iglů": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!", "Iglú": "V předsíni kostela si schovávám dobroty. Nabídněte si, ale ať zbyde i na další padouchy, kteří mne přijdou navštívit!" };
+        var x = sifry[document.getElementById("sifra").value]
+        if (x != undefined)
+            document.getElementById("vysledek").innerHTML = x;
+        else
+            document.getElementById("vysledek").innerHTML = "takovou šifru neznám";
+    }
+</script>
+
+<body id="page-top">
+    <div class="container">
+        <div class="form-group mt-3">
+            <label for="main">SUPERHYPERMEGATAJNÁ DATABÁZE SLABIN MÉ ZÁKLADNY</label>
+            <input type="text" class="form-control" id="sifra" onkeydown="validate()">
+        </div>
+
+        <button onclick="validate()" class="btn btn-primary">Poslat</button>
+
+        <div class="align-items-center justify-content-center mt-5">
+            <p class="text-center" id="vysledek">
+
+            </p>
+        </div>
+    </div>
+</body>

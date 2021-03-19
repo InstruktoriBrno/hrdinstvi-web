@@ -1,0 +1,47 @@
+header.masthead h1 { font-size: 3rem; }
+@media (min-width: 992px) {
+  header.masthead h1 { font-size: 4rem; }
+}
+@media (min-width: 1200px) {
+  header.masthead h1 { font-size: 5rem; }
+}
+
+.hrdina {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.first {
+  width: 100%;
+}
+
+.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.dino-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dino-image {
+  height: 7em;
+  position: absolute;
+  right: -8em;
+  top: -6em;
+}
+
+.portfolio-box-custom {
+  max-width: 100%;
+}
+
+.portfolio-custom {
+  object-fit: cover;
+  height: 24rem;
+  width: 100%;
+}
