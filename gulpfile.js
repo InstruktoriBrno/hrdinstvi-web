@@ -47,6 +47,19 @@ function clean() {
   return del(["./vendor/"]);
 }
 
+// Clean vendor
+function deploy() {
+  del(["./scss/"]);
+  del(["./README"]);
+  del(["./LICENSE"]);
+  del(["./Gulpfile.js"]);
+  del(["./.travis.yml"]);
+  del(["./package.json"]);
+  del(["./package-lock.json"]);
+  return del(["./.gitignore/"]);
+
+}
+
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap JS
@@ -132,6 +145,7 @@ const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 exports.css = css;
 exports.js = js;
 exports.clean = clean;
+exports.deploy = deploy;
 exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
