@@ -2,3 +2,5 @@ node_modules/
 vendor/
 css/creative.css
 css/creative.min.css
+js/creative.min.js
+js/ScrollMagic.min.js
