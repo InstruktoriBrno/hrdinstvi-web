@@ -6,6 +6,10 @@ header.masthead h1 { font-size: 3rem; }
   header.masthead h1 { font-size: 5rem; }
 }
 
+.masthead .btn {
+  width: 200px;
+}
+
 .hrdina {
   position: relative;
   display: inline-block;
