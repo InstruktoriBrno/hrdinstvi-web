@@ -10,6 +10,10 @@ header.masthead h1 { font-size: 3rem; }
   width: 200px;
 }
 
+.bg-superlight {
+  background-color: #F0F5F8!important;
+}
+
 .bg-light {
   background-color: #d8dee2!important;
 }
