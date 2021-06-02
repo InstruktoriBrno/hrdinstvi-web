@@ -6,7 +6,7 @@ before_script:
   - npm install -g gulp-cli
 
 install:
-  - node install
+  - npm install
 
 script:
   - npm run-script build
